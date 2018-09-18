@@ -1,0 +1,14 @@
+[Unit]
+Description=Openthread Border Initialization
+After=otbr-agent.service otbr-nat44.service wpantund.service
+
+[Service]
+ExecStart=/home/pi/otbr/software/otbr-init/otbr-init.js
+Type=oneshot
+RemainAfterExit=true
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=otbr-init
+
+[Install]
+WantedBy=multi-user.target
