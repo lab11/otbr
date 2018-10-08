@@ -1,0 +1,13 @@
+[Unit]
+Description=Initial Resize 
+
+[Service]
+ExecStart=/home/pi/otbr/software/otbr-resize/otbr-resize.sh
+Type=oneshot
+RemainAfterExit=true
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=otbr-resize
+
+[Install]
+WantedBy=multi-user.target
