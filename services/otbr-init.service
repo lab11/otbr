@@ -3,7 +3,7 @@ Description=Openthread Border Initialization
 After=otbr-agent.service otbr-nat44.service wpantund.service
 
 [Service]
-ExecStart=/home/pi/otbr/software/otbr-init/otbr-init.js
+ExecStart=/home/pi/otbr/software/otbr-init/otbr-init.sh
 Type=oneshot
 RemainAfterExit=true
 StandardOutput=syslog
