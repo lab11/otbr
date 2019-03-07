@@ -72,3 +72,10 @@ able to SSH into the Border Router using the MDNS `.local` hostname:
 ssh pi@tb-c098e5c1XXXX.local
 ```
 Where `XXXX` is the ID specific to your Border Router.
+The default password for the `pi` user on our image is `lab11otbr!`.
+
+After successfully logging into your new Border Router, while optional, it is
+good practice to **change the password**. Better yet, [disable SSH password
+access](https://stackoverflow.com/questions/20898384/ssh-disable-password-authentication)
+and [generate and install your public key](https://serverfault.com/questions/2429/how-do-you-setup-ssh-to-authenticate-using-keys-instead-of-a-username-password)
+on the Border Router.
