@@ -17,7 +17,7 @@ network and the Pi forwarder.
 
 You will also need to install nrfutil:
 ```
-pip3 install nrfutil
+pip install nrfutil
 ```
 
 ### Prepare the Border Router
