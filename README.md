@@ -53,7 +53,7 @@ Navigate to the openthread submodule. Bootstrap your system, the repo, and build
 cd openthread/
 ./scripts/bootstrap
 ./bootstrap
-make -f examples/Makefile-nrf52840 COMMISSIONER=1 JOINER=1 COAP=1 DNS_CLIENT=1 MTD_NETDIAG=1 BORDER_ROUTER=1 MAC_FILTER=1 UDP_PROXY=1 USB=1 BOOTLOADER=1 DHCP6_SERVER=1 DHCP6_CLIENT=1 DNS_SERVER=1
+make -f examples/Makefile-nrf52840 COMMISSIONER=1 JOINER=1 COAP=1 DNS_CLIENT=1 MTD_NETDIAG=1 BORDER_ROUTER=1 MAC_FILTER=1 UDP_PROXY=1 USB=1 BOOTLOADER=1 DHCP6_SERVER=1 DHCP6_CLIENT=1 DNS_SERVER=1 DISABLE_BUILTIN_MBEDTLS=1
 ```
 
 Plug in the dongle, and press the reset button. This puts the dongle into the
