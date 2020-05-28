@@ -1,6 +1,6 @@
 [Unit]
 Description=Openthread Border Initialization
-After=otbr-agent.service otbr-nat44.service wpantund.service
+After=otbr-nat44.service otbr-agent.service otbr-web.service
 
 [Service]
 ExecStart=/home/pi/otbr/software/otbr-init/otbr-init.sh
