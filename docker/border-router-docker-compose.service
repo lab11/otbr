@@ -1,7 +1,7 @@
 [Unit]
 Description=Border router docker compose
 Requires=docker.service
-After=docker.service
+After=network.target network-online.target docker.service
 
 [Service]
 WorkingDirectory=/home/pi/otbr/docker

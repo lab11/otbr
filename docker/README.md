@@ -8,17 +8,17 @@ This setups up a border router using the otbr docker image and docker compose.
 To use this you need to install docker and docker compose
 
 ```shell
-curl -sSL https://get.docker.com | sha
+curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker pi
 sudo apt-get install -y libffi-dev libssl-dev
 sudo apt-get install -y python3 python3-pip
-sudo apt-get remove python-configparsera
+sudo apt-get remove python-configparser
 sudo pip3 -v install docker-compose
 ```
 
 ## Configure
 
-You should set the values after the ot-ctl commands at the end of docker_entrypoint.sh 
+You should set the values after the ot-ctl commands at the end of docker_entrypoint.sh
 to configure your border router.
 
 ## Setup the PI
