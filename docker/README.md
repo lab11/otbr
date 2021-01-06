@@ -42,6 +42,9 @@ sudo systemctl stop ncp_state_notifier
 docker-compose up
 ```
 
+## Install to opt:
+sudo ln -rs docker /opt/otbr
+
 ## Run with systemd
 
 ```shell

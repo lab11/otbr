@@ -4,7 +4,7 @@ Requires=docker.service
 After=network.target network-online.target docker.service
 
 [Service]
-WorkingDirectory=/home/pi/otbr/docker
+WorkingDirectory=/opt/otbr/
 ExecStart=/usr/local/bin/docker-compose up
 ExecStop=/usr/local/bin/docker-compose down
 TimeoutStartSec=10
