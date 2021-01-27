@@ -24,7 +24,7 @@ while True:
         d[array[i,0]] = array[i,1]
 
     rssi_readings.append(d)
-    if (t - t_start >= 10):
+    if (t - t_start >= 60):
         t_start = t
         df = pd.DataFrame(rssi_readings).set_index('time')
         df.to_csv("rssi_log.csv")
