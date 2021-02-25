@@ -1,0 +1,13 @@
+[Unit]
+Description=Openthread Border Router Watchdog
+After=border-router-docker-compose.service
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/otbr/software/otbr-watchdog/otbr-watchdog.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=otbr-watchdog
+
+[Install]
+WantedBy=multi-user.target
