@@ -11,10 +11,9 @@ This will generate `rssi_log.csv`, and log measurements every 10 seconds.
 
 ### To install and start as a service:
 
-Navigate to the services directory and copy to systemd:
+Copy service to systemd and enable:
 
 ```
-cd ../../services/
 sudo cp otbr-log-rssi.service /etc/systemd/system/.
 sudo systemctl daemon-reload
 sudo systemctl enable otbr-log-rssi.service
