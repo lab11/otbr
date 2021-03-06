@@ -7,6 +7,7 @@ services:
                 volumes:
                         - /dev/ttyACM0:/dev/ttyACM0
                         - ./docker_entrypoint.sh:/app/docker_entrypoint.sh
+                        - /var/lib/thread:/var/lib/thread
                 privileged: true
                 entrypoint: /app/docker_entrypoint.sh
                 command: --radio-url spinel+hdlc+uart:///dev/ttyACM0
@@ -16,3 +17,4 @@ services:
                         - net.ipv6.conf.all.forwarding=1
                 dns:
                         - 127.0.0.1
+                restart: always

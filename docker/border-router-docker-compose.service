@@ -6,7 +6,7 @@ After=network.target network-online.target docker.service
 [Service]
 WorkingDirectory=/opt/otbr/docker/
 ExecStart=/usr/local/bin/docker-compose up
-ExecStop=/usr/local/bin/docker-compose down
+ExecStop=bash docker_exit.sh
 TimeoutStartSec=10
 Restart=on-failure
 StartLimitIntervalSec=60
