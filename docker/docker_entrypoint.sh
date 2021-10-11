@@ -94,6 +94,12 @@ echo "OTBR_WEB_OPTS=\"-I $TUN_INTERFACE_NAME -d7 -p 80\"" >/etc/default/otbr-web
 /app/script/server
 sleep 20
 
+#ot-ctl dataset init new
+#ot-ctl dataset networkkey 00112233445566778899aabbccddeeff
+#ot-ctl dataset panid 0xface
+#ot-ctl dataset networkname "OpenThread"
+#ot-ctl dataset channel 25
+#ot-ctl dataset commit active
 ot-ctl ifconfig up
 ot-ctl thread start
 ot-ctl prefix add fd11:22::/64 pasor
